@@ -1,7 +1,15 @@
 <h1>How to partition drive for use with Windows WIM Installer by ignitedoreo</h1>
 <ol>
-  <li>1. Clean Drive</li>
-  <li>2. Create BOOT Partition</li>
-  <li>3. Create Primary (system) Partition</li>
-  <li>4. Assign letters to them</li>
+  <li>Clean Drive</li>
+  <li>Create BOOT Partition</li>
+  <li>Create Primary (system) Partition</li>
+  <li>Assign letters to them</li>
 </ol>
+<h2>1. Clean drive</h2>
+<h3>Warning! This will delete everything from drive!</h3>
+1.1. Get list of all of your disks
+<code>
+  DISKPART> list disk
+</code>
+Example output:
+<img href="screen1.png">
