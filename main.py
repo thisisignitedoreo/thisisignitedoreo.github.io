@@ -9,6 +9,12 @@ data = {
 	"attachments": []
 }
 
-while True:
-	requests.post("https://discord.com/api/webhooks/1095798254978994187/oLuPuo0H8ST265I-y6yDJVS7ewieQr8jbx2rw8XbKwRFlImY63cMZ3EMRVeZ3xj6O3pA", json=data)
-	time.sleep(2)
+def send(v):
+	if v:
+		while True:
+			requests.post("https://discord.com/api/webhooks/1095798254978994187/oLuPuo0H8ST265I-y6yDJVS7ewieQr8jbx2rw8XbKwRFlImY63cMZ3EMRVeZ3xj6O3pA", json=data)
+			time.sleep(2)
+	else:
+		requests.post("https://discord.com/api/webhooks/1095798254978994187/oLuPuo0H8ST265I-y6yDJVS7ewieQr8jbx2rw8XbKwRFlImY63cMZ3EMRVeZ3xj6O3pA", json=data)
+
+send(0)
